@@ -51,3 +51,5 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php'))
 {
 	require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+$routes->get('/', 'LoginController::index');
+$routes->post('login', 'LoginController::login');
